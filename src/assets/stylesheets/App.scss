@@ -1,0 +1,38 @@
+@import 'Variables';
+
+.App {
+  @include divImg(cover);
+  width: 100vw;
+  height: 100vh;
+  background-image: url('https://ik.imagekit.io/5qto23ljb2r/tr:w-auto/agreloe_macOS-bg_Jh0P69YEG.jpg');
+  display: grid;
+  grid-template-rows: $topbarH calc(100vh - $topbarH - ($iconH*2) ) ($iconH*2);
+  overflow: hidden;
+
+  &__navbar {
+    @include glassNav;
+    grid-row: 3/4;
+    place-self: center;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    padding: .5rem 0 .75rem 0;
+    position: relative;
+  }
+
+  .clicked::after{
+    content: '';
+    background: rgba(255, 255, 255, 0.5);
+    width: 5px;
+    height: 5px;
+    display: block;
+    position: absolute;
+    transform: translate(18px, 44px);
+    border-radius: 5px;
+  }
+
+  &__topbar {
+    grid-row: 1/2;
+  }
+
+
+}

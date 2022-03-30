@@ -1,0 +1,27 @@
+@import 'Variables';
+
+.topbar {
+    @include glassNav;
+    width: 100%;
+    height: $topbarH;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .icon {
+        @include divImg(contain);
+        height: calc($topbarH - 10px);
+        width: calc($topbarH - 10px);
+    }
+
+    &__apple {
+        background-image: url('../img/apple-icon.svg');
+        margin: 0 1rem;
+    }
+
+    &__brightness {
+        background-image: url('../img/brightness-icon.svg');
+        margin: 0 1rem 0 auto;
+    }
+
+}

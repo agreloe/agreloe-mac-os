@@ -1,6 +1,5 @@
 @import 'Variables';
 
-
 body {
   @include initialConfig;
   h1,
@@ -8,11 +7,42 @@ body {
   h3,
   h4,
   h5,
-  p {
+  p,
+  input {
     margin: 0;
     padding: 0;
     margin-block-start: 0;
     margin-block-end: 0;
+  }
+
+  p {
+    font-family: $secondaryFont;
+  }
+
+  h1 {
+    font-size: $header1;
+  }
+
+  h2 {
+    font-size: $header2;
+  }
+
+  h3 {
+    font-size: $header3;
+  }
+
+  h4 {
+    font-size: $header4;
+  }
+
+  h5 {
+    font-size: $header5;
+  }
+  
+  button {
+    border: none;
+    padding: 0;
+    cursor: pointer;
   }
 }
 

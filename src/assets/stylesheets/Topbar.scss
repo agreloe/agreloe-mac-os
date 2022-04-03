@@ -1,12 +1,16 @@
 @import 'Variables';
 
 .topbar {
-    @include glassNav;
+    @include glassTopNav;
     width: 100%;
     height: $topbarH;
     display: flex;
     flex-direction: row;
     align-items: center;
+
+    #tag {
+        font-family: "San Francisco Display Medium" !important;
+    }
 
     .icon {
         @include divImg(contain);
@@ -24,4 +28,29 @@
         margin: 0 1rem 0 auto;
     }
 
+    #date {
+        width: 4.75rem;
+        margin: 0 0.5rem 0 0;
+    }
+    #time {
+        width: 3rem;
+    }
+
+    #date,
+    #time {
+        border: none;
+        outline: none;
+        background: transparent;
+        color: $textColor !important;
+        font-family: "San Francisco Display Medium";
+        font-size: inherit;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+
+    #date:focus,
+    #time:focus {
+        outline: none;
+    }
 }

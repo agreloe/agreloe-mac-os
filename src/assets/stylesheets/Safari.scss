@@ -1,0 +1,107 @@
+@import 'Variables';
+
+.safariBlock {
+    @include glassShadowBlack(0.5);
+    width: 300px;
+    height: 60%;
+    overflow: hidden;
+
+    &__topNav {
+        height: 30px;
+        width: 100%;
+        background-color: #1E1E1E;
+        position: relative;
+
+        button {
+            @include closeBtn;
+        }
+
+        &__url {
+            width: 50%;
+            height: 80%;
+            background-color: #00000075;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+            position: absolute;
+            top: 3px;
+            left: 25%;
+
+            &::before{
+                content: 'akirestylo.ar';
+                margin: 5% 0 0 25%;
+                font-size: .75rem;
+            }
+        }
+    }
+
+    &__content {
+        width: 70%;
+        margin: 0 auto;
+        h1 {
+            margin: 1.5rem 0 0 0;
+        }
+        h3 {
+            margin: 1.5rem 0 0 0;
+        }
+
+        &__icons,
+        &__projects {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr;
+            align-items: center;
+        }
+
+        &__icons {
+            margin: .5rem 0 0 0;
+            &__ln,
+            &__be,
+            &__gh {
+                @include divImg(contain);
+                width: 50px;
+                height: 50px;
+            }
+
+            &__ln {
+                background-image: url('../img/ln-icon.svg');
+            }
+
+            &__be {
+                background-image: url('../img/behance-icon.svg');
+            }
+            &__gh {
+                background-image: url('../img/github-icon.svg');
+                width: 50px;
+                height: 40px;
+            }
+        }
+        &__projects {
+            margin: 1rem 0 0 0;
+            &__win95,
+            &__derigo {
+                @include divImg(contain);
+                width: 37px;
+                height: 37px;
+                background-color: $textColor;
+                border-radius: 5px;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                -ms-border-radius: 5px;
+                -o-border-radius: 5px;
+                margin: 0 .25rem;
+            }
+
+            &__win95 {
+                background-image: url('../img/windows-0.png');
+            }
+            &__derigo {
+                background-image: url('../img/derigo-icon.svg');
+            }
+
+        }
+    }
+
+}

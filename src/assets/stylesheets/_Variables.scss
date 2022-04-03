@@ -2,6 +2,15 @@
 $iconH: 40px;
 $topbarH: 25px;
 $textColor: hsl(0, 0%, 100%);
+$windowColor: #1E1E1E;
+$btnColor: #eb5547;
+$header1: 1.383rem;
+$header2: 1.296rem;
+$header3: 1.215rem;
+$header4: 1.138rem;
+$header5: 1.067rem;
+$primaryFont: "San Francisco Display Medium";
+$secondaryFont: "San Francisco Display Thin";
 
 //fonts
 
@@ -20,17 +29,35 @@ $textColor: hsl(0, 0%, 100%);
 
 //mixins
 @mixin glassNav {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.05);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5.5px);
     -webkit-backdrop-filter: blur(5.5px);
+}
+@mixin glassTopNav {
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+}
+@mixin glassShadowBlack($opacity) {
+    background: rgba(0, 0, 0, $opacity);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 @mixin initialConfig {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "San Francisco Display Medium";
+    font-family: $primaryFont;
     color: $textColor;
 }
 
@@ -38,5 +65,17 @@ $textColor: hsl(0, 0%, 100%);
     background-position: center center;
     background-size: $bgSize;
     background-repeat: no-repeat;
+}
+
+@mixin closeBtn {
+    width: 10px;
+    height: 10px;
+    background-color: $btnColor;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    margin: .5rem .5rem;
 }
 

@@ -1,0 +1,119 @@
+@import 'Variables';
+
+.brightness {
+    @include glassShadowBlack(0.3);
+    width: 150px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 25px;
+    right: 70px;
+
+    &__wrapper {
+        @include glassNav;
+        width: 80%;
+        height: 70%;
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+
+        &__label {
+            display: block;
+            align-self: flex-start;
+            margin-left: 10%;
+            font-size: .75rem;
+        }
+
+        &__slider {
+            width: 80%;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            appearance: none;
+            background: transparent;
+            margin: .5rem 0;
+
+            &:focus {
+                outline: none;
+            }
+
+            &::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                height: .75rem;
+                width: .75rem;
+                border-radius: .75rem;
+                background: #ffffff;
+                cursor: pointer;
+                -webkit-border-radius: .75rem;
+                -moz-border-radius: .75rem;
+                -ms-border-radius: .75rem;
+                -o-border-radius: .75rem;
+            }
+
+            &::-moz-range-thumb {
+                height: .75rem;
+                width: .75rem;
+                border-radius: .75rem;
+                background: #ffffff;
+                cursor: pointer;
+                -webkit-border-radius: .75rem;
+                -moz-border-radius: .75rem;
+                -ms-border-radius: .75rem;
+                -o-border-radius: .75rem;
+            }
+
+            &::-ms-thumb {
+                height: .75rem;
+                width: .75rem;
+                border-radius: .75rem;
+                background: #ffffff;
+                cursor: pointer;
+                -webkit-border-radius: .75rem;
+                -moz-border-radius: .75rem;
+                -ms-border-radius: .75rem;
+                -o-border-radius: .75rem;
+            }
+
+            &::-ms-track {
+                width: 100%;
+                cursor: pointer;
+                background: transparent;
+                border-color: transparent;
+                color: transparent;
+            }
+
+            &::-webkit-slider-runnable-track  {
+                width: 100%;
+                cursor: pointer;
+                background: #c4c4c4;
+                border-radius: .75rem;
+                -webkit-border-radius: .75rem;
+                -moz-border-radius: .75rem;
+                -ms-border-radius: .75rem;
+                -o-border-radius: .75rem;
+            }
+
+            &::-moz-range-track {
+                width: 100%;
+                cursor: pointer;
+                background: #c4c4c4;
+                border-radius: .75rem;
+                -webkit-border-radius: .75rem;
+                -moz-border-radius: .75rem;
+                -ms-border-radius: .75rem;
+                -o-border-radius: .75rem;
+            }
+
+
+        }
+}
+}
+

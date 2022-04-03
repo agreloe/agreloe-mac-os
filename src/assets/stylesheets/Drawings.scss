@@ -1,0 +1,102 @@
+@import 'Variables';
+
+.drawBlock {
+    @include glassShadowBlack(0.5);
+    width: 290px;
+    height: 65%;
+    overflow: hidden;
+    position: relative;
+
+    &__button {
+        @include closeBtn;
+    }
+
+    &__title {
+        background-color: #00000075;
+        width: fit-content;
+        margin: .5rem 0 0 .15rem;
+        padding: .5rem;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        font-size: .75rem;
+        display: flex;
+        align-items: center;
+
+        p::before {
+            content: url('../img/folder_blue-icon.svg');
+            width: 15px;
+            height: 13px;
+            margin: 0 .25rem 0 0;
+        }
+    }
+
+    &__topbar {
+        background-color: #00000075;
+        width: 67.5%;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        padding-left: .5rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 10;
+    }
+    &__content {
+        width: 70%;
+        height: calc(100% - 30px);
+        background-color: $windowColor;
+        position: absolute;
+        top: 30px;
+        right: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+
+        &__img {
+            @include divImg(contain);
+            margin: 0 auto;
+            width: 80%;
+            height: auto;
+            position: relative;
+            display: flex;
+            justify-content: center;
+
+            .imgName {
+                position: absolute;
+                bottom: 14%;
+                font-size: .75rem;
+            }
+
+            .touched {
+                background-color: #2259C9;
+                border-radius: .25rem;
+                -webkit-border-radius: .25rem;
+                -moz-border-radius: .25rem;
+                -ms-border-radius: .25rem;
+                -o-border-radius: .25rem;
+            }
+        }
+
+        .first {
+            background-image: url('https://ik.imagekit.io/c9tj2d0xqow/tr:w-auto/el-barto_arZjSWLYN1.jpg');
+        }
+
+        .second {
+            background-image: url('https://ik.imagekit.io/c9tj2d0xqow/tr:w-auto/kitty-yawn_qaf-cv0iZ.jpg');
+        }
+
+        .third {
+            background-image: url('https://ik.imagekit.io/c9tj2d0xqow/tr:w-auto/crazy-scorpio_XhSueHX1l.jpg');
+        }
+
+        .fourth {
+            background-image: url('https://ik.imagekit.io/c9tj2d0xqow/tr:w-auto/japoncito_BGyhWqLEL.jpg');
+        }
+
+
+    }
+}

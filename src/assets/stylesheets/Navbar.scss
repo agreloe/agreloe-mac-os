@@ -2,7 +2,7 @@
 
 .navbar {
     display: grid;
-    grid-template-columns: repeat(5, calc($iconH + 15px));
+    grid-template-columns: repeat(4, calc($iconH + 15px));
 
     &__icon {
         @include divImg(contain);
@@ -16,9 +16,6 @@
     }
     .safari {
         background-image: url('../img/safari-icon.svg');
-    }
-    .msg {
-        background-image: url('../img/msg-icon.svg');
     }
     .mail {
         background-image: url('../img//mail-icon.svg');

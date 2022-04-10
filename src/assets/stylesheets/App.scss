@@ -2,13 +2,12 @@
 
 .App {
   @include divImg(cover);
-  width: 100%;
-  height: 100vh;
+  width: 100vw;
   min-height: 100vh;
   min-height: -webkit-fill-available;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: $topbarH calc(100% - ($topbarH + $iconH*2)) ($iconH*2);
+  grid-template-rows: $topbarH calc(100vh - ($topbarH + $iconH*2)) ($iconH*2);
   overflow: hidden;
   transition: opacity .5s ease-in-out;
   animation: blurIn .5s ease-in-out 1;

@@ -108,7 +108,7 @@ function App() {
           }
           {
             window.notes.isOpen === true && (
-              <Draggable nodeRef={nodeRef} cancel='.notesBlock__button'>
+              <Draggable nodeRef={nodeRef} cancel='.notesBlock__button, .notesBlock__body__wrapper'>
                 <div id="notes" ref={nodeRef} className='App__screen__notes' onClick={selectedNotes} onTouchStart={selectedNotes}  style={window.notes.isSelected ? {zIndex:`${window.index}`} : {zIndex: `${window.index - 1}`}}>
                 <Notes />
                 </div>

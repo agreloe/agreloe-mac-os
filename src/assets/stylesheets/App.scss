@@ -5,13 +5,18 @@
   width: 100vw;
   min-height: 100vh;
   min-height: -webkit-fill-available;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: $topbarH calc(100vh - ($topbarH + $iconH*2)) ($iconH*2);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
   overflow: hidden;
   transition: opacity .5s ease-in-out;
   animation: blurIn .5s ease-in-out 1;
   -webkit-animation: blurIn .5s ease-in-out 1;
+  -webkit-transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;
+  -ms-transition: opacity .5s ease-in-out;
+  -o-transition: opacity .5s ease-in-out;
 
   @keyframes blurIn {
     0% {
@@ -105,15 +110,12 @@
   }
 
   &__navbar {
-    grid-row: 3/4;
-    place-self: center;
     position: relative;
   }
 
   &__screen {
-    grid-row: 2/3;
     width: 100%;
-    height: 100%;
+    height: calc(100vh - ($topbarH + $iconH*2));
     display: inline-block;
     margin: 0;
     padding: 0;
@@ -165,7 +167,7 @@
   }
 
   &__topbar {
-    grid-row: 1/2;
+    width: 100%;
   }
 
   @include large-screen {

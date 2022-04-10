@@ -1,8 +1,12 @@
 @import 'Variables';
 
 .navbar {
+    @include glassNav;
     display: grid;
     grid-template-columns: repeat(4, calc($iconH + 15px));
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    padding: .5rem 0 .75rem 0;
 
     &__icon {
         @include divImg(contain);
@@ -12,15 +16,48 @@
         place-self: center;
     }
     .notes {
+        @include navbarAnimStart;
         background-image: url('../img/notes-icon.svg');
+
+        &:hover{
+            @include navbarAnimEnd;
+        }
     }
     .safari {
+        @include navbarAnimStart;
         background-image: url('../img/safari-icon.svg');
+
+        &:hover{
+            @include navbarAnimEnd;
+        }
     }
     .mail {
+        @include navbarAnimStart;
         background-image: url('../img//mail-icon.svg');
+
+        &:hover{
+            @include navbarAnimEnd;
+        }
     }
     .drawings {
+        @include navbarAnimStart;
         background-image: url('../img//drawings-icon.svg');
+
+        &:hover{
+            @include navbarAnimEnd;
+        }
+    }
+
+    @include small-screen {
+        .drawings,
+        .mail,
+        .safari,
+        .notes {
+            transform: scale(1) !important;
+            -webkit-transform: scale(1) !important;
+            -moz-transform: scale(1) !important;
+            -ms-transform: scale(1) !important;
+            -o-transform: scale(1) !important;
+        }
     }
 }

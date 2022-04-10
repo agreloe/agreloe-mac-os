@@ -1,6 +1,6 @@
 import React from 'react'
 import '../assets/stylesheets/Mail.scss';
-import { openMail, setApp } from "../redux/windowReducer";
+import { openMail, selectMail, setApp } from "../redux/windowReducer";
 import { useDispatch } from "react-redux";
 
 const Mail = () => {
@@ -8,14 +8,15 @@ const Mail = () => {
 
   const closeMail = () => {
     dispatch(openMail(false))
+    dispatch(selectMail(false))
     document.getElementById("mail").classList.remove("clicked")
-    dispatch(setApp('Agreloe'))
+    dispatch(setApp("Agreloe"))
   }
-  
+
   return (
     <div className='mailBlock'>
         <div className="mailBlock__topbar">
-            <button className="mailBlock__topbar__close" onClick={closeMail}></button>
+            <button className="mailBlock__topbar__close" onClick={closeMail} onTouchStart={closeMail}></button>
             <button className="mailBlock__topbar__send"></button>
         </div>
         <div className="mailBlock__form">

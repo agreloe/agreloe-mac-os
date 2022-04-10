@@ -7,9 +7,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 25px;
-    right: 70px;
 
     &__wrapper {
         @include glassNav;

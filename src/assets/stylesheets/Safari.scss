@@ -3,7 +3,7 @@
 .safariBlock {
     @include glassShadowBlack(0.5);
     width: 300px;
-    height: 60%;
+    height: 300px;
     overflow: hidden;
 
     &__topNav {

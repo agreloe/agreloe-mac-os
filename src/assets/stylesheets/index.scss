@@ -2,6 +2,7 @@
 
 body {
   @include initialConfig;
+  background-color: black;
   h1,
   h2,
   h3,
@@ -17,6 +18,7 @@ body {
 
   p {
     font-family: $secondaryFont;
+    color: $textColor;
   }
 
   h1 {
@@ -38,7 +40,7 @@ body {
   h5 {
     font-size: $header5;
   }
-  
+
   button {
     border: none;
     padding: 0;

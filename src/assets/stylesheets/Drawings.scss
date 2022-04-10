@@ -2,8 +2,8 @@
 
 .drawBlock {
     @include glassShadowBlack(0.5);
-    width: 290px;
-    height: 65%;
+    width: 300px;
+    height: 350px;
     overflow: hidden;
     position: relative;
 
@@ -13,7 +13,7 @@
 
     &__title {
         background-color: #00000075;
-        width: fit-content;
+        width: 23%;
         margin: .5rem 0 0 .15rem;
         padding: .5rem;
         border-radius: 5px;
@@ -56,11 +56,18 @@
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
 
+        a {
+            width: 100%;
+            height: 100%;
+            -webkit-tap-highlight-color: transparent;
+            outline: none !important;
+        }
+
         &__img {
             @include divImg(contain);
             margin: 0 auto;
             width: 80%;
-            height: auto;
+            height: 100%;
             position: relative;
             display: flex;
             justify-content: center;
@@ -98,5 +105,13 @@
         }
 
 
+    }
+    @include xxl-screen {
+        width: 400px;
+        height: 450px;
+
+        &__title {
+            width: 24.5%;
+        }
     }
 }

@@ -25,7 +25,6 @@ const Navbar = () => {
     const drawClick = () => {
         dispatch(openDraw(true))
         dispatch(setApp('Drawings'))
-
     }
 
   return (

@@ -6,6 +6,12 @@ import reportWebVitals from './reportWebVitals';
 import { Provider } from "react-redux";
 import store from './redux/store';
 
+// eslint-disable-next-line
+const littleCat = `%c \/\\_\/\\\r\n( o.o )\r\n > ^ <`
+const font = `font-family: monospace`
+const signature = 'agreloe'
+console.log(littleCat,font,signature);
+
 
 ReactDOM.render(
   <React.StrictMode>

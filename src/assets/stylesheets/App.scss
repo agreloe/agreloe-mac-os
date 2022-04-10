@@ -3,10 +3,12 @@
 .App {
   @include divImg(cover);
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: $topbarH calc(100vh - ($topbarH + $iconH*2)) ($iconH*2);
+  grid-template-rows: $topbarH calc(100% - ($topbarH + $iconH*2)) ($iconH*2);
   overflow: hidden;
   transition: opacity .5s ease-in-out;
   animation: blurIn .5s ease-in-out 1;
@@ -25,7 +27,6 @@
   &__loader {
     width: 100vw;
     min-height: 100vh;
-  /* mobile viewport bug fix */
     min-height: -webkit-fill-available;
     position: absolute;
     display: flex;
@@ -82,27 +83,18 @@
     position: absolute;
     overflow: hidden;
     width: 100%;
-    height: 100vh;
-  /* mobile viewport bug fix */
-    min-height: -webkit-fill-available;
-
+    height: 100%;
 
     picture {
       object-fit: cover;
       width: 100%;
-      height: 100vh;
-  /* mobile viewport bug fix */
-      min-height: -webkit-fill-available;
-
+      height: 100%;
     }
 
     img {
       object-fit: cover;
       width: 100%;
-      height: 100vh;
-  /* mobile viewport bug fix */
-      min-height: -webkit-fill-available;
-
+      height: 100%;
     }
   }
 
@@ -198,7 +190,7 @@
     }
   }
   @include xl-screen {
-    
+
     &__screen {
       &__draw {
         left: 65%;
@@ -219,7 +211,7 @@
     }
   }
   @include xxl-screen {
-    
+
     &__screen {
       &__draw {
         left: 65%;
@@ -241,7 +233,7 @@
   }
 
   @include medium-screen {
-    
+
     &__screen {
       &__draw {
         left: 55%;

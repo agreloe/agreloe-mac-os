@@ -59,8 +59,8 @@ $secondaryFont: "San Francisco Display Thin";
     padding: 0;
     font-family: $primaryFont;
     color: $textColor;
+    width: 100vw;
     min-height: 100vh;
-    /* mobile viewport bug fix */
     min-height: -webkit-fill-available;
 }
 

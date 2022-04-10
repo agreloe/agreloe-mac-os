@@ -2,12 +2,8 @@
 
 .App {
   @include divImg(cover);
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  align-items: center;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
   transition: opacity .5s ease-in-out;
   animation: blurIn .5s ease-in-out 1;
@@ -84,8 +80,8 @@
   &__bg {
     position: absolute;
     overflow: hidden;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
 
     picture {
       object-fit: cover;
@@ -109,12 +105,14 @@
 
   &__navbar {
     position: relative;
-    margin: 0 0 .75rem 0;
+    margin: 0 auto;
+    width: fit-content;
+
   }
 
   &__screen {
     width: 100%;
-    height: calc(100% - ($topbarH + $iconH*2));
+    height: calc(100vh - ($topbarH + $iconH*2));
     display: inline-block;
     margin: 0;
     padding: 0;

@@ -59,8 +59,6 @@ $secondaryFont: "San Francisco Display Thin";
     padding: 0;
     font-family: $primaryFont;
     color: $textColor;
-    width: 100vw;
-    height: 100vh;
 }
 
 @mixin divImg($bgSize) {

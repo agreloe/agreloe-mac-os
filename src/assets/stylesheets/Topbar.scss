@@ -41,7 +41,7 @@
         border: none;
         outline: none;
         background: transparent;
-        color: $textColor !important;
+        color: $textColor;
         font-family: "San Francisco Display Medium";
         font-size: inherit;
         appearance: none;
@@ -52,5 +52,9 @@
     #date:focus,
     #time:focus {
         outline: none;
+    }
+
+    input[type="text"][disabled] {
+        color: $textColor !important;
     }
 }

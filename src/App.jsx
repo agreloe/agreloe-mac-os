@@ -60,7 +60,6 @@ function App() {
 
   React.useEffect(()=>{
     setTimeout(() => setLoading(false), 2500)
-    
   },[])
 
   return (
@@ -76,7 +75,6 @@ function App() {
                 <div className="progress-bar2"></div>
               </div>
             </div>
-
           </div>
         ) : (
           <div id="App" className="App">

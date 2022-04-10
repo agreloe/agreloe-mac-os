@@ -104,16 +104,16 @@
   }
 
   &__navbar {
-    position: relative;
-    margin: 0 auto;
-    width: fit-content;
-
-  }
+    position: absolute;
+    bottom: 16px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 
   &__screen {
     width: 100%;
-    height: calc(100% - ($topbarH + $iconH*2));
-    display: inline-block;
+    height: 100%;
     margin: 0;
     padding: 0;
     box-sizing: border-box;

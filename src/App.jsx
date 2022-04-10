@@ -133,11 +133,12 @@ function App() {
               </Draggable>
             )
           }
-
           </div>
+
           <div className='App__navbar'>
           <Navbar />
           </div>
+
           </div>
         )
       }

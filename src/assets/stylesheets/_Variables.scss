@@ -59,6 +59,7 @@ $secondaryFont: "San Francisco Display Thin";
     padding: 0;
     font-family: $primaryFont;
     color: $textColor;
+    overflow: hidden;
 }
 
 @mixin divImg($bgSize) {

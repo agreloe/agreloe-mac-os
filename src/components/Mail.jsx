@@ -19,7 +19,7 @@ const Mail = () => {
             <button className="mailBlock__topbar__close" onClick={closeMail} onTouchStart={closeMail}></button>
         </div>
         <div className="mailBlock__form">
-            <form action="https://formsubmit.co/agreloerica@hotmail.com" method="POST">
+            <form action="https://formsubmit.co/55722d22f1e5cee05655cdabd25b163f" method="POST">
                 <input type="text" value="To: agreloerica@hotmail.com" disabled />
                 <input type="text" name='name' placeholder='Name'/>
                 <input type="email" name='email' placeholder='Email'/>

@@ -21,6 +21,13 @@
         &__close {
             @include closeBtn;
         }
+
+    }
+
+    &__form {
+        width: 95%;
+        margin: 0 auto;
+
         &__send {
             background: transparent;
             background-image: url('../img/send-icon.svg');
@@ -32,11 +39,6 @@
             left: 2rem;
             appearance: none;
         }
-    }
-
-    &__form {
-        width: 95%;
-        margin: 0 auto;
 
         form {
             input {
@@ -92,6 +94,7 @@
                     color: $textColor;
                 }
             }
+
 
         }
 

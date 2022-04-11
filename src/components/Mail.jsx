@@ -17,14 +17,15 @@ const Mail = () => {
     <div className='mailBlock'>
         <div className="mailBlock__topbar">
             <button className="mailBlock__topbar__close" onClick={closeMail} onTouchStart={closeMail}></button>
-            <button className="mailBlock__topbar__send"></button>
         </div>
         <div className="mailBlock__form">
-            <form action="">
-                <input type="text" value="To: agreloerica@gmail.com" disabled />
-                <input type="text" placeholder='Name'/>
+            <form action="https://formsubmit.co/agreloerica@hotmail.com" method="POST">
+                <input type="text" value="To: agreloerica@hotmail.com" disabled />
+                <input type="text" name='name' placeholder='Name'/>
+                <input type="email" name='email' placeholder='Email'/>
                 <span></span>
                 <textarea name="message" placeholder='Message'></textarea>
+                <button type='submit' className="mailBlock__form__send"></button>
             </form>
         </div>
     </div>

@@ -16,11 +16,11 @@
         width: 23%;
         margin: .5rem 0 0 .15rem;
         padding: .5rem;
-        border-radius: 5px;
         -webkit-border-radius: 5px;
         -moz-border-radius: 5px;
         -ms-border-radius: 5px;
         -o-border-radius: 5px;
+        border-radius: 5px;
         font-size: .75rem;
         display: flex;
         align-items: center;
@@ -80,11 +80,11 @@
 
             .touched {
                 background-color: #2259C9;
-                border-radius: .25rem;
                 -webkit-border-radius: .25rem;
                 -moz-border-radius: .25rem;
                 -ms-border-radius: .25rem;
                 -o-border-radius: .25rem;
+                border-radius: .25rem;
             }
         }
 

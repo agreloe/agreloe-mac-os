@@ -16,37 +16,27 @@
         border-radius: 10px;
         place-self: center;
     }
-    .notes {
-        @include navbarAnimStart;
-        background-image: url('../img/notes-icon.svg');
-
-        &:hover{
-            @include navbarAnimEnd;
-        }
-    }
-    .safari {
-        @include navbarAnimStart;
-        background-image: url('../img/safari-icon.svg');
-
-        &:hover{
-            @include navbarAnimEnd;
-        }
-    }
-    .mail {
-        @include navbarAnimStart;
-        background-image: url('../img//mail-icon.svg');
-
-        &:hover{
-            @include navbarAnimEnd;
-        }
-    }
+    
+    .notes,
+    .safari,
+    .mail,
     .drawings {
         @include navbarAnimStart;
-        background-image: url('../img//drawings-icon.svg');
-
         &:hover{
             @include navbarAnimEnd;
         }
+    }
+    .notes {
+        background-image: url('../img/notes-icon.svg');
+    }
+    .safari {
+        background-image: url('../img/safari-icon.svg');
+    }
+    .mail {
+        background-image: url('../img//mail-icon.svg');
+    }
+    .drawings {
+        background-image: url('../img//drawings-icon.svg');
     }
 
     @include small-screen {

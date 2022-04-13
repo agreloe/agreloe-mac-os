@@ -5,13 +5,13 @@
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  transition: opacity .5s ease-in-out;
-  animation: blurIn .5s ease-in-out 1;
   -webkit-animation: blurIn .5s ease-in-out 1;
+  animation: blurIn .5s ease-in-out 1;
   -webkit-transition: opacity .5s ease-in-out;
   -moz-transition: opacity .5s ease-in-out;
   -ms-transition: opacity .5s ease-in-out;
   -o-transition: opacity .5s ease-in-out;
+  transition: opacity .5s ease-in-out;
 
   @keyframes blurIn {
     0% {
@@ -51,12 +51,12 @@
     .progress-bar2 {
       height: 5px;
       border-radius: 30px;
-      transition: 0.4s ease-in-out;
       transition-property: width;
       -webkit-transition: 0.4s ease-in-out;
       -moz-transition: 0.4s ease-in-out;
       -ms-transition: 0.4s ease-in-out;
       -o-transition: 0.4s ease-in-out;
+      transition: 0.4s ease-in-out;
     }
 
     .progress-moved .progress-bar2 {
@@ -169,14 +169,17 @@
         left: 65%;
         top: 20%;
       }
+
       &__mail {
         left: 10%;
         top: 30%;
       }
+
       &__notes {
         left: 50%;
         top: 15%;
       }
+      
       &__safari {
         left: 28%;
         top: 18%;
@@ -190,14 +193,17 @@
         left: 65%;
         top: 20%;
       }
+
       &__mail {
         left: 10%;
         top: 30%;
       }
+
       &__notes {
         left: 50%;
         top: 15%;
       }
+
       &__safari {
         left: 28%;
         top: 18%;
@@ -211,14 +217,17 @@
         left: 65%;
         top: 20%;
       }
+
       &__mail {
         left: 10%;
         top: 30%;
       }
+
       &__notes {
         left: 40%;
         top: 15%;
       }
+
       &__safari {
         left: 28%;
         top: 18%;
@@ -227,20 +236,22 @@
   }
 
   @include medium-screen {
-
     &__screen {
       &__draw {
         left: 55%;
         top: 50%;
       }
+
       &__mail {
         left: 10%;
         top: 20%;
       }
+
       &__notes {
         left: 50%;
         top: 15%;
       }
+
       &__safari {
         left: 15%;
         top: 50%;

@@ -82,6 +82,7 @@
     overflow: hidden;
     width: 100vw;
     height: 100vh;
+    z-index: -1;
 
     picture,
     img {
@@ -179,7 +180,7 @@
         left: 50%;
         top: 15%;
       }
-      
+
       &__safari {
         left: 28%;
         top: 18%;

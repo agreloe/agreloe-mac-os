@@ -99,7 +99,7 @@ function App() {
           }
           {
             window.safari.isOpen === true && (
-              <Draggable nodeRef={nodeRef} cancel='.safariBlock__button'>
+              <Draggable nodeRef={nodeRef} cancel='.safariBlock__button, .safariBlock__content'>
                 <div id="safari" ref={nodeRef} className='App__screen__safari' onClick={selectedSafari} onTouchStart={selectedSafari}  style={window.safari.isSelected ? {zIndex:`${window.index}`} : {zIndex: `${window.index - 1}`}}>
                 <Safari />
                 </div>

@@ -7,10 +7,6 @@
     overflow: hidden;
     position: relative;
 
-    &__button {
-        @include closeBtn;
-    }
-
     &__title {
         background-color: #00000075;
         width: 23%;

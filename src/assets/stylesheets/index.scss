@@ -42,10 +42,16 @@ body {
   }
 
   button {
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    outline: none;
+    @include closeBtn;
   }
+
+  @include small-screen {
+    button {
+      width: 14px !important;
+      height: 14px !important;
+    }
+  }
+
 }
+
 

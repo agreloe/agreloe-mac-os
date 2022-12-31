@@ -12,10 +12,6 @@
         background-color: #1E1E1E;
         position: relative;
 
-        button {
-            @include closeBtn;
-        }
-
         &__url {
             width: 50%;
             height: 80%;

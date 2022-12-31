@@ -17,11 +17,6 @@
         width: 100%;
         height: 30px;
         position: relative;
-
-        &__close {
-            @include closeBtn;
-        }
-
     }
 
     &__form {

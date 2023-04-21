@@ -5,4 +5,4 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## About
 
 This is my macOS desktop :)
-https://akirestylo.ar/
+https://akirestylo.netlify.app/
